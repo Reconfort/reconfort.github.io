@@ -318,10 +318,14 @@ ul.social-links img {
   letter-spacing: 0.51px;
   word-wrap: break-word;
 }
+.link-button:active {
+  background-color: #2230d2;
+  color: #f4f5f7;
+}
 
 .link-button:hover {
-  background-color: #396df2;
-  color: #f7f7f9;
+  background-color: #6070ff;
+  color: #f4f5f7;
   cursor: pointer;
 }
 
@@ -367,6 +371,12 @@ ul.social-links img {
   border: 0.5px #6070ff solid;
   justify-content: flex-start;
   align-items: center;
+}
+
+.project-button:hover {
+  background-color: #6070ff;
+  color: white;
+  cursor: pointer;
 }
 
 .button-content {
