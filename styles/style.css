@@ -209,7 +209,6 @@ ul.social-links img {
 }
 
 .works {
-  width: hug (375px);
   height: hug (2, 788px);
   top: 718px;
   padding: 114px 24px 114px 24px;
@@ -217,26 +216,35 @@ ul.social-links img {
   grid-template-columns: auto;
   flex-direction: column;
   gap: 88px;
+  justify-content: center;
 }
 
 .work-item {
-  width: 100%;
+  width: 80vw;
   height: 100%;
   padding: 16px;
   background: white;
   border-radius: 16px;
   overflow: hidden;
   border: 0.5px #dfe1e6 solid;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
   gap: 12px;
-  display: inline-flex;
+  display: flex;
+}
+
+.work-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.work-item:nth-child(odd) {
+  flex-direction: row;
 }
 
 .work-image {
-  width: 295px;
-  height: 220px;
+  width: 50%;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -247,6 +255,8 @@ ul.social-links img {
   align-items: flex-start;
   gap: 12px;
   display: flex;
+  width: 50%;
+  padding: 0 3%;
 }
 
 .work-title {
@@ -355,6 +365,8 @@ ul.social-links img {
   top: 718px;
   padding: 114px 24px 114px 24px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 88px;
   background-color: white;
@@ -362,11 +374,16 @@ ul.social-links img {
 }
 
 .aboutContent {
-  width: hug (327px);
+  width: 80vw;
   height: hug (346px);
   gap: 12px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftBlock {
+  width: 48%;
 }
 
 .aboutContent ul li {
@@ -383,7 +400,7 @@ ul.social-links img {
 }
 
 .project-button {
-  width: 50vw;
+  width: 50%;
   background-color: transparent;
   height: hug (48px);
   padding: 12px;
@@ -395,7 +412,6 @@ ul.social-links img {
 
 .project-button:hover {
   background-color: #6070ff;
-  color: white;
   cursor: pointer;
 }
 
@@ -408,9 +424,14 @@ ul.social-links img {
   letter-spacing: 0.51px;
 }
 
+.project-button:hover .button-content {
+  color: white;
+}
+
 .language-container {
   display: flex;
   flex-direction: column;
+  width: 48%;
 }
 
 .title {
@@ -420,7 +441,7 @@ ul.social-links img {
 
 .languages {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: #253858;
   font-size: 15px;
   font-weight: 500;
@@ -431,13 +452,15 @@ ul.social-links img {
 
 .languages .list {
   display: flex;
+  flex-direction: column;
+  width: 30%;
   gap: 16px;
   background-color: #f7f7f9;
   padding: 9px 12px 9.716px 12px;
   color: #253858;
   font-size: 15px;
   font-weight: 500;
-  align-items: center;
+  align-items: flex-start;
   line-height: 20px;
   word-wrap: break-word;
 }
@@ -452,13 +475,19 @@ ul.social-links img {
 }
 
 .contact {
-  background-image: url(../media/contactBg.png);
+  background-image: url(../media/ContactDesktopBg.png);
   width: 100vw;
   height: 779px;
   background-size: cover;
   background-repeat: no-repeat;
   flex-shrink: 0;
-  padding-top: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactContainer {
+  width: 40%;
 }
 
 .contact-form {
@@ -466,7 +495,7 @@ ul.social-links img {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 4%;
+  padding: 5%;
   gap: 10px;
   margin-top: 5%;
 }
@@ -507,7 +536,9 @@ ul.social-links img {
   font-weight: 500;
   line-height: 24px; /* 141.176% */
   letter-spacing: 0.51px;
-  width: 40%;
+  width: 180px;
+  text-align: center;
+  margin: 0 30%;
 }
 
 /* Styles for mobile screens with a minimum width of 375px */
@@ -561,5 +592,66 @@ ul.social-links img {
     top: 92px;
     padding: 114px 24px 114px 24px;
     gap: 12px;
+  }
+
+  .work-item {
+    width: 95vw;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .work-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .work-item:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .work-image {
+    width: 100%;
+  }
+
+  .work-details {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: row;
+  }
+
+  .aboutContent {
+    width: 95vw;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .leftBlock {
+    width: 100%;
+  }
+
+  .language-container {
+    width: 100%;
+  }
+
+  .languages {
+    flex-direction: column;
+  }
+
+  .languages .list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact {
+    background-image: url(../media/contactBg.png);
+    padding-top: 22%;
+  }
+
+  .contactContainer {
+    width: 95%;
   }
 }
