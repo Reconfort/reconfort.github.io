@@ -103,6 +103,7 @@ header .burger {
   line-height: 52px;
   text-align: left;
   color: #172b4d;
+  margin-top: 12px;
 }
 
 .aboutContent p {
@@ -111,11 +112,17 @@ header .burger {
   line-height: 24px;
   text-align: left;
   color: #344563;
+  margin-top: 12px;
+}
+
+.info {
+  color: #344563;
 }
 
 .aboutContent ul {
   list-style: none;
   display: flex;
+  margin-top: 16px;
 }
 
 .aboutContent h2 {
@@ -125,6 +132,7 @@ header .burger {
   text-align: left;
   color: #7f8cff;
   text-transform: uppercase;
+  margin-top: 12px;
 }
 
 .containerBg .wrapper h1 {
@@ -216,6 +224,7 @@ ul.social-links img {
   grid-template-columns: auto;
   flex-direction: column;
   gap: 88px;
+  width: 100%;
   justify-content: center;
 }
 
@@ -256,7 +265,7 @@ ul.social-links img {
   gap: 12px;
   display: flex;
   width: 50%;
-  padding: 0 3%;
+  padding: 3% 3%;
 }
 
 .work-title {
@@ -274,6 +283,10 @@ ul.social-links img {
   align-items: center;
   gap: 12px;
   display: inline-flex;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
 }
 
 .work-tag {
@@ -298,8 +311,9 @@ ul.social-links img {
 .work-tech-stack {
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   display: inline-flex;
+  margin-top: 5%;
 }
 
 .tech-tag {
@@ -373,6 +387,14 @@ ul.social-links img {
   border-top-right-radius: 100px;
 }
 
+.lg-screen {
+  display: flex;
+}
+
+.sm-screen {
+  display: none;
+}
+
 .aboutContent {
   width: 80vw;
   height: hug (346px);
@@ -408,6 +430,12 @@ ul.social-links img {
   border: 0.5px #6070ff solid;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 24px;
+}
+
+.project-button:active {
+  background-color: #396df2;
+  cursor: pointer;
 }
 
 .project-button:hover {
@@ -428,6 +456,10 @@ ul.social-links img {
   color: white;
 }
 
+.project-button:active .button-content {
+  color: white;
+}
+
 .language-container {
   display: flex;
   flex-direction: column;
@@ -436,6 +468,9 @@ ul.social-links img {
 
 .title {
   display: flex;
+  padding: 16px 26px 16px 12px;
+  align-items: center;
+  gap: 12px;
   justify-content: space-between;
 }
 
@@ -453,10 +488,10 @@ ul.social-links img {
 .languages .list {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 122px;
   gap: 16px;
   background-color: #f7f7f9;
-  padding: 9px 12px 9.716px 12px;
+  padding: 12px 12px 20px 12px;
   color: #253858;
   font-size: 15px;
   font-weight: 500;
@@ -477,7 +512,7 @@ ul.social-links img {
 .contact {
   background-image: url(../media/ContactDesktopBg.png);
   width: 100vw;
-  height: 779px;
+  height: 846px;
   background-size: cover;
   background-repeat: no-repeat;
   flex-shrink: 0;
@@ -487,7 +522,7 @@ ul.social-links img {
 }
 
 .contactContainer {
-  width: 40%;
+  width: 35%;
 }
 
 .contact-form {
@@ -496,7 +531,7 @@ ul.social-links img {
   justify-content: center;
   align-content: center;
   padding: 5%;
-  gap: 10px;
+  gap: 27px;
   margin-top: 5%;
 }
 
@@ -505,10 +540,10 @@ ul.social-links img {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid #cfd8dc;
   background: #fff;
-  padding: 6px;
+  padding: 15px 38px 15px 16px;
 }
 
 .contact-form textarea {
@@ -595,7 +630,7 @@ ul.social-links img {
   }
 
   .work-item {
-    width: 95vw;
+    width: 90vw;
     height: 100%;
     flex-direction: column;
   }
@@ -620,8 +655,15 @@ ul.social-links img {
     flex-direction: row;
   }
 
+  .details {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
   .aboutContent {
-    width: 95vw;
+    width: 90vw;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -649,9 +691,29 @@ ul.social-links img {
   .contact {
     background-image: url(../media/contactBg.png);
     padding-top: 22%;
+    width: 100%;
   }
 
   .contactContainer {
     width: 95%;
+  }
+
+  .lg-screen {
+    display: none;
+  }
+
+  .sm-screen {
+    display: flex;
+  }
+
+  .ul .social-links img {
+    height: 19.96px;
+    width: 19.99px;
+  }
+
+  .contact-form button {
+    display: inline-flex;
+    margin: 0;
+    width: 40%;
   }
 }
