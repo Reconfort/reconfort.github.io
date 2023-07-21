@@ -726,3 +726,15 @@ ul.social-links img {
     width: 40%;
   }
 }
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Scale up the logo to 120% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
