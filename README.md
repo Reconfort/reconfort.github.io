@@ -23,6 +23,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license) 
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -66,7 +67,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Reconfort/Microverse-Portifolio.git
+  git clone https://github.com/Reconfort/Mobile-Portifolio.git
 ```
 
 ### Install
@@ -74,7 +75,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd Microverse-Portifolio
+  cd Mobile-Portifolio
   npm install
 ```
 
@@ -127,5 +128,11 @@ If you like this project you can clone it and feel free to improve it by making 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microver staff, Reviewer, Mentor , and my Coding partners.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
