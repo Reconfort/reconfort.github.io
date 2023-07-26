@@ -40,6 +40,7 @@ header a h2 {
   line-height: 20px;
   text-align: center;
   color: #6070ff;
+  animation: logoAnimation 2s infinite;
 }
 
 header ul {
@@ -339,6 +340,11 @@ ul.social-links img {
   display: inline-flex;
   border: none;
   background-color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+.work-link:hover {
+  transform: scale(1.1);
 }
 
 .link-button {
@@ -431,6 +437,7 @@ ul.social-links img {
   justify-content: flex-start;
   align-items: center;
   margin-top: 24px;
+  transition: all ease-in-out 0.5s;
 }
 
 .project-button:active {
@@ -633,6 +640,7 @@ ul.social-links img {
     width: 90vw;
     height: 100%;
     flex-direction: column;
+    transition: all ease-in-out 0.5s;
   }
 
   .work-item:nth-child(even) {
@@ -715,5 +723,19 @@ ul.social-links img {
     display: inline-flex;
     margin: 0;
     width: 40%;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2); /* Scale up the logo to 120% */
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
