@@ -15,7 +15,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
-  - [Visit](#visit)
   - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
@@ -59,12 +58,6 @@ Creating my debut portfolio: mastering tools, practices for Microverse and beyon
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-To visit online project open link below:
-### Visit Site
-
-  https://Reconfort.github.io
-
 
 To get a local copy up and running, follow these steps.
 
