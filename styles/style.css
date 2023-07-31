@@ -10,7 +10,9 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -583,6 +585,45 @@ ul.social-links img {
   margin: 0 30%;
 }
 
+.hamburger-menu {
+  background-color: #6070ff;
+  backdrop-filter: blur(24px);
+  opacity: 0.9;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 90px 12px;
+  display: none;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hamburger-menu ul li {
+  color: #ffffff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+.hamburger-menu ul li button {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+
+.hamburger-menu ul li button img {
+  width: 24px;
+  height: 24px;
+}
+
 /* Styles for mobile screens with a minimum width of 375px */
 @media (max-width: 768px) {
   header {
@@ -723,6 +764,10 @@ ul.social-links img {
     display: inline-flex;
     margin: 0;
     width: 40%;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 }
 

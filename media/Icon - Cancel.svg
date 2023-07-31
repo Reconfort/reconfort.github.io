@@ -1,0 +1,40 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#E5E5E5"/>
+<g id="Template 1-Mobile-Menu" clip-path="url(#clip0_0_1)">
+<rect width="375" height="812" transform="translate(-319 -56)" fill="#F7F7F9"/>
+<path id="Base Header" d="M-319 -56H56V662H-239C-283.183 662 -319 626.183 -319 582V-56Z" fill="white"/>
+<g id="Content" filter="url(#filter0_f_0_1)">
+<g id="App Bar - Compact - Dark - iOS">
+<g id="Toolbar - Dark - Compact">
+<g id="Normal Button/Tertiary/Enabled">
+<g id="Icons/Icon - Menu">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM3 12C3 11.4477 3.44772 11 4 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L4 13C3.44772 13 3 12.5523 3 12ZM4 16C3.44772 16 3 16.4477 3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17C21 16.4477 20.5523 16 20 16H4Z" fill="#6070FF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="Overlay" style="mix-blend-mode:multiply">
+<rect x="-319" y="-56" width="375" height="812" fill="#6070FF"/>
+</g>
+<g id="App Bar - Compact - Dark - iOS_2">
+<g id="Toolbar - Dark - Compact_2">
+<g id="Normal Button/Tertiary/Enabled_2">
+<g id="Icons/Icon - Cancel">
+<path id="Icon" fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_1" x="-369" y="-72" width="494" height="752" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_0_1"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="375" height="812" fill="white" transform="translate(-319 -56)"/>
+</clipPath>
+</defs>
+</svg>
