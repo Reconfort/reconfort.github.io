@@ -25,7 +25,7 @@
           </li>
         </ul>
         </nav>
-        <nav class="burger" onclick="showMenu()">
+        <nav class="burger" >
           <img src="./media/burger.png" alt="Hamburger Menu" />
         </nav>
       </header>
@@ -352,22 +352,19 @@
         </div>
       </section>
       
-      <div class="hamburger-menu" id="Menu">
+      <div class="nav" id="menus">
+        <button class="close-btn">
+          <img src="./media/Cancel.png" alt="">
+        </button>
         <ul>
-          <li>
-            <button onclick="hideMenu()">
-              <img src="./media/Icon - Cancel.svg" alt="">
-            </button>
+          <li onclick="hideNav()">
+            <a href="#Portifolio">Portifolio</a>
           </li>
-          <li>
-            <a href="#Portifolio" onclick="hideMenu()">Portifolio</a>
-          </li>
-          <li>
-            <a href="#About" onclick="hideMenu()">About</a>
-          </li>
-          <li>
-            <a href="#Contact" onclick="hideMenu()">Contact</a>
-          </li>
+          <li onclick="hideNav()">
+            <a href="#About">About</a>
+            </li>
+          <li onclick="hideNav()">
+            <a href="#Contact">Contact</li>
         </ul>
       </div>
 

@@ -1,9 +1,14 @@
-const MenuSection = document.getElementById("Menu");
+const Menu = document.getElementById("menus");
+const closeMenu = document.querySelector(".close-btn");
+const openMenu = document.querySelector(".burger");
 
-export const showMenu = () => {
-  MenuSection.style.display = "block";
+const showNav = () => {
+  Menu.style.display = "block";
 };
 
-export const hideMenu = () => {
-  MenuSection.style.display = "none";
+const hideNav = () => {
+  Menu.style.display = "none";
 };
+
+closeMenu.addEventListener("click", hideNav);
+openMenu.addEventListener("click", showNav);
