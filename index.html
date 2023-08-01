@@ -10,22 +10,22 @@
   <body>
       <header>
         <a href="#">
-          <h2 class="logo">Reconfort Daniel</h2>
+          <h2 class="logo">Reconfort</h2>
         </a>
         <nav>
         <ul>
           <li>
-            <a href="#">Portifolio</a>
+            <a href="#Portifolio">Portifolio</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
         </nav>
-        <nav class="burger">
+        <nav class="burger" onclick="showMenu()">
           <img src="./media/burger.png" alt="Hamburger Menu" />
         </nav>
       </header>
@@ -71,7 +71,7 @@
         </ul>
       </section>
             
-      <section class="works">
+      <section class="works" id="Portifolio">
         <div class="work-item lg-screen">
           <img src="./media/Snapshoot5.png" class="work-image"/>
           <article class="work-details">
@@ -265,7 +265,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="About">
         <div class="aboutContent">
           <div class="leftBlock">
             <h3>About Myself</h3>
@@ -337,7 +337,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="Contact">
         <div class="contactContainer">
           <h2>Contact me</h2>
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
@@ -351,5 +351,28 @@
           </form>
         </div>
       </section>
+      
+      <div class="hamburger-menu" id="Menu">
+        <ul>
+          <li>
+            <button onclick="hideMenu()">
+              <img src="./media/Icon - Cancel.svg" alt="">
+            </button>
+          </li>
+          <li>
+            <a href="#Portifolio" onclick="hideMenu()">Portifolio</a>
+          </li>
+          <li>
+            <a href="#About" onclick="hideMenu()">About</a>
+          </li>
+          <li>
+            <a href="#Contact" onclick="hideMenu()">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <script src="main.js">
+        
+      </script>
   </body>
 </html>
