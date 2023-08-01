@@ -1,9 +1,9 @@
-const MenuSection = document.getElementById("Menu");
+const Menu = document.getElementById("menus");
 
-export const showMenu = () => {
-  MenuSection.style.display = "block";
-};
+export const showNav = () => {
+  Menu.style.display = "block";
+}
 
-export const hideMenu = () => {
-  MenuSection.style.display = "none";
-};
+export const hideNav = () => {
+  Menu.style.display = "none";
+}
