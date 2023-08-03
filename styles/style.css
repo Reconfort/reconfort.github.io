@@ -774,6 +774,13 @@ ul.social-links li {
   transform: scale(1.1);
 }
 
+#error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -3%;
+  display: none;
+}
+
 /* Styles for mobile screens with a minimum width of 375px */
 @media (max-width: 768px) {
   header {
