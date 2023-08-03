@@ -363,6 +363,7 @@ ul.social-links li {
 
 .work-tech-stack {
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   display: inline-flex;
@@ -382,7 +383,6 @@ ul.social-links li {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.36px;
-  word-wrap: break-word;
 }
 
 .work-link {

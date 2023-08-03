@@ -23,7 +23,7 @@ const portifolioData = [
     description2:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     featuredImage: "",
-    technologies: ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
     liveLink: "http://reconfort.github.io",
     sourceLink: "https://github.com/Reconfort/reconfort.github.io",
   },
@@ -36,7 +36,7 @@ const portifolioData = [
     description2:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     featuredImage: "",
-    technologies: ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
     liveLink: "http://reconfort.github.io",
     sourceLink: "https://github.com/Reconfort/reconfort.github.io",
   },
@@ -49,7 +49,7 @@ const portifolioData = [
     description2:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     featuredImage: "",
-    technologies: ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
     liveLink: "http://reconfort.github.io",
     sourceLink: "https://github.com/Reconfort/reconfort.github.io",
   },
@@ -71,11 +71,11 @@ portifolioData.forEach((data) => {
             <p class="work-description">
               ${data.description1}
               </p>
-              <ul class="work-tech-stack">
-              ${data.technologies.map((data1) => {
-                return `<li class="tech-tag">${data1}</li>`;
-              })}
-            </ul>
+              <div class="work-tech-stack">
+              ${data.technologies.map(tech=>{
+                return `<span class="tech-tag">${tech}</span>`
+              }).join('')}
+            </div>
 
             <button class="work-link" type="button" data-work-array='${JSON.stringify(
               data
