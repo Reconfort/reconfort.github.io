@@ -6,7 +6,7 @@ const saveFormData = () => {
   };
 
   // Save the entire form data as a single object in local storage
-
+  
   localStorage.setItem("formData", JSON.stringify(formData));
 }
 // Function to load form data from local storage and pre-fill the form
@@ -20,5 +20,5 @@ const saveFormData = () => {
   };
 // Add event listeners to save data on input change and load data on page load
 const contactform = document.querySelector(“.contact-form”);
-contactform.addEventListener(‘input’, saveFormData);
-window.addEventListener(‘load’, loadFormData)
+contactform.addEventListener("input", saveFormData);
+window.addEventListener("load", loadFormData)
