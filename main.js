@@ -179,23 +179,23 @@ if (seeProjectButtons) {
 // Form Validation
 
 // Get the form and submit button element
-const submitBtn = document.getElementById('submit-btn');
+const submitBtn = document.getElementById("submit-btn");
 
 // Add a click event listener to the submit button
-submitBtn.addEventListener('click', (event) => {
+submitBtn.addEventListener("click", (event) => {
     // Get the email input value
-    const emailInput = document.getElementById('email');
+    const emailInput = document.getElementById("email");
     const email = emailInput.value;
 
     // Check if the email is in lowercase
     if (email !== email.toLowerCase()) {
         // Show the error message and prevent form submission
-        const errorMessage = document.getElementById('error-message');
-        errorMessage.style.display = 'block';
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.style.display = "block";
         event.preventDefault();
     } else {
         // If email is in lowercase, hide the error message (if it was shown previously)
-        const errorMessage = document.getElementById('error-message');
-        errorMessage.style.display = 'none';
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.style.display = "none";
     }
 });
