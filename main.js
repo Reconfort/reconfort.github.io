@@ -177,16 +177,13 @@ if (seeProjectButtons) {
 }
 
 // Form Validation
-
 // Get the form and submit button element
 const submitBtn = document.getElementById("submit-btn");
-
 // Add a click event listener to the submit button
 submitBtn.addEventListener("click", (event) => {
     // Get the email input value
     const emailInput = document.getElementById("email");
     const email = emailInput.value;
-
     // Check if the email is in lowercase
     if (email !== email.toLowerCase()) {
         // Show the error message and prevent form submission
